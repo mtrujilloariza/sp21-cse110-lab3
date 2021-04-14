@@ -1,1 +1,1 @@
-https://mtrujilloariza.github.io/Lab2/
+https://mtrujilloariza.github.io/sp21-cse110-lab3/
