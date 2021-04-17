@@ -1,4 +1,137 @@
 /* this is the stylesheet for index.html */
 html {
-    background-color: dodgerblue;
+    background-color:lightseagreen;
+
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    background: black;
+    width: 100%;
+    z-index: 3;
+}
+
+h1 {
+    color: rgb(256,256,256);
+    padding: 1cm;
+    text-decoration: underline;
+}
+
+
+
+h2 {
+    color: rgb(201, 170, 103);
+    padding: 3px;
+}
+
+
+section p {
+    color: hsl(278, 58%, 39%);
+    padding-left: 1cm;
+    margin: auto;
+}
+
+img {
+    padding: 10%;
+    display: inline-block;   
+    position: relative;
+}
+
+form, fieldset {
+    padding: 3rem;
+    display: block;
+
+}
+
+label {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+input {
+    margin: .75em;
+}
+
+textarea {
+    margin: 1rem;
+}
+a {
+    padding: 5px;
+}
+
+ul {
+    border-style:groove;
+    border-color: black;
+    border-width: .2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 300px;
+    padding-right: 1rem;
+}
+
+audio {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    display: block;
+}
+
+hr {
+    margin: .5rem;
+}
+
+input:hover {
+    background: grey;
+}
+
+input:active {
+    background: blue;
+}
+
+.entry > p::first-letter {
+    font-weight: bolder;
+}
+
+a[href="https://github.com/mtrujilloariza"] {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .entry {
+        text-align: center;
+    }
+    ul {
+        margin-left: 20%;
+    }
+    li {
+        text-align: center;
+    }
+}
+
+#about-me {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%
+}
+
+#about-me section {
+    justify-content: center;
+}
+
+p ~ input {
+    color: red;
+}
+
+img + h3 {
+    text-decoration:overline;
 }
