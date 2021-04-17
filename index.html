@@ -6,6 +6,19 @@
         <meta name="author" content="Marlon Trujillo">
         <link rel="icon" type="image/png" href="favicon-32x32.png">
         <link rel="stylesheet" href="style.css">
+        <style>
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+            section.entry  {
+                flex-grow: 1;
+            }
+        </style>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -18,24 +31,31 @@
                     <source src="Surprise.mp4" type="video/mp4">
                 </video>  
             </details>
-            <section>
-                <h2>Some Stuff:</h2>
-                <span>Some Links: </span>
-                <nav>
-                    <a href="https://github.com/mtrujilloariza">My Github</a>
-                </nav>
-            </section>
-            <section>
-                <h2><em>Top Things About Me</em></h2>
-                    <ol>
-                        <li>I like pasta</li>
-                        <li>I like bagels</li>
-                        <li>I like video games</li>
-                    </ol>
-            </section>
-            <div>
-                <hr>
+            <div id="about-me">
                 <section>
+                    <h2>Some Stuff:</h2>
+                    <span>Some Links: </span>
+                    <nav>
+                        <a href="https://github.com/mtrujilloariza">My Github</a>
+                    </nav>
+                </section>
+                <section>
+                    <h2><em>Top Things About Me</em></h2>
+                        <ol>
+                            <li>I like pasta</li>
+                            <li>I like bagels</li>
+                            <li>I like video games</li>
+                        </ol>
+                </section>
+                <section>
+                    <h2><em>Top Things I Hate</em></h2>
+                        <ol>
+                            <li>Trying to make the css look like I want</li>
+                        </ol>
+                </section>
+            </div>
+            <div>
+                <section style="height: 350px;" class="entry">
                     <h2>April 7th 2021</h2> 
                     <p>Things I did today:</p> 
                     <ul>
@@ -48,7 +68,7 @@
                     <p>I give this day a <b>6/10</b></p>
                 </section>
                 <hr>
-                <section>
+                <section style="height: 350px;" class="entry">
                     <h2>April 6th 2021</h2> 
                     <p>Things I did today:</p> 
                     <ul>
@@ -61,7 +81,7 @@
                     <p>I give this day a <b>6.9/10</b></p>
                 </section>
                 <hr>
-                <section>
+                <section style="height: 350px;" class="entry">
                     <h2>April 5th 2021</h2> 
                     <p>Things I did today:</p> 
                     <ul>
@@ -78,11 +98,10 @@
                 </section>
                 <hr>
             </div>
-            <div>
-                <p><em>Please</em> fill out this very <strong>important</strong> form</p>
-            </div>
+
             <form>
                 <fieldset>
+                    <p><em>Please</em> fill out this very <strong>important</strong> form</p>
                     <input type="checkbox">
                     <label > By checking this box I certify that I will send 100$ to cash app $MarlonTrujilloAriza or face legal action</label><br>
                     <p>Who is Stronger?</p>
@@ -97,7 +116,7 @@
                     <input type="text"><br>
                     <label>Enter the day you will die:</label>
                     <input type="date"><br>
-                    <label>Please type in the lyrics to Never Gonna Give You Up by Rick Astley:</label>
+                    <label>Please type in the lyrics to Never Gonna Give You Up by Rick Astley:</label><br>
                     <textarea rows="4" cols="50"></textarea><br>
                     <label>Please Select Your Last Meal</label>
                     <input list="food">
@@ -116,8 +135,8 @@
                 </fieldset>
             </form>
             <footer>
-                <h3>This is a footer</h3>
                 <img src="footer.jpg" width="100" height="100" alt="footer">
+                <h3>This is a footer</h3>
             </footer>
         </main>
     </body>
